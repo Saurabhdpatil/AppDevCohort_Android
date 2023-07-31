@@ -1,63 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:partice3/firstpage.dart';
+import 'package:partice3/secondpage.dart';
 
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("saurabh",
-            style: TextStyle(
-                fontSize: 20,
-                color: Colors.black,
-                fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.yellow,
-        actions: [
-          IconButton(
-              onPressed: () {
-                print("add emergency call only");
-              },
-              icon: Icon(Icons.add_call),
-              color: Colors.green),
-          IconButton(
-              onPressed: () {
-                print("add a menu");
-              },
-              icon: Icon(
-                Icons.menu,
-                color: Colors.black,
-              )),
-        ],
-      ),
-      body: Container(
-        child: Column(
-          children: [
-            Text(
-              "saurabh hello",
-              style: TextStyle(fontSize: 22, color: Colors.black),
-            ),
-            ElevatedButton(
-                onPressed: () {
-                  print("hiii how are you");
-                },
-                child: Text("Click me")),
-            TextButton(
-                onPressed: () {
-                  print("sorry enter the right pass");
-                },
-                child: Text("forget passward")),
-            IconButton(
-              onPressed: () {
-                print("what you want to add");
-              },
-              icon: Icon(Icons.add_circle, size: 70),
-            ),
-          ],
-        ),
-      ),
+  runApp(
+    MaterialApp(
+      home: mysecondpage(),
+      initialRoute: 'myfirstpage',
+      debugShowCheckedModeBanner: false, // Debug icon will be remove
+      routes: {
+        'myfirstpage': (context) => myfirstpage(),
+        'mysecondpage': (context) => mysecondpage()
+      },
     ),
-  ));
+  );
 }
 
 class MyApp extends StatelessWidget {

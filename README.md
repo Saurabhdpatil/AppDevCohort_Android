@@ -1,5 +1,7 @@
 # AppDevCohort Android Repository
 
+![AppDevCohort Android](https://camo.githubusercontent.com/2f36d44a72c5191c1399694e5556396945dab96e6780c699aba17461cc6ee076/68747470733a2f2f692e6962622e636f2f376e4e6e53724e2f616e64726f69642d646576656c6f706572732e706e67)
+
 Welcome to the AppDevCohort Android repository! This repository serves as my playground for practicing Android app development and hosting my Android app projects.
 
 ## Cloning the Repository
